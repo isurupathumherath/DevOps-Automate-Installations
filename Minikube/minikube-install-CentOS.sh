@@ -10,7 +10,7 @@
 # echo 'Use this command to start minikube - minikube start'
 
 #Start Minikube
-echo -n 'Do you want to start Minikube Now? (Y/N)'
+echo -n 'Do you want to start Minikube Now? (Y/N) '
 read VAR
 
 while [ $VAR = 'Y' ] || [ $VAR = 'y' ] || [ $VAR = 'N' ] || [ $VAR = 'n' ]
@@ -18,12 +18,13 @@ do
     if [[ $VAR = 'Y' ]] || [[ $VAR = 'y' ]]
     then
         minikube start
+        break
     elif [[ $VAR = 'N' ]] || [[ $VAR = 'n' ]]
     then
-        echo 'Use minikube start command to run minikube manually'
+        echo 'NOTE - Use minikube start command to run minikube manually'
         break
     else 
-        echo -n 'Do you want to start Minikube Now? (Y/N)'
+        echo -n 'Do you want to start Minikube Now? (Y/N) '
         read VAR
     fi
 done
