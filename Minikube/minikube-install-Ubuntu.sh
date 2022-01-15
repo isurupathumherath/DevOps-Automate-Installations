@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# this script is only tested on CentOS 7
+# this script is only tested on Ubuntu
 
 # Install Minikube
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
