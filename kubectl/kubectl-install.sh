@@ -21,6 +21,6 @@ sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 kubectl version --client
 
 #Success Message
-echo '\nkubectl is ready to use!'
+echo -e 'kubectl is ready to use!'
 echo 'Good Luck!'
 echo 'Author - Isuru Pathum Herath : https://github.com/isurupathumherath'
