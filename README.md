@@ -1,8 +1,8 @@
 # DevOps-Automate-Installations
 DevOps necessary tools - Automatic installation scripts
 
-#Jenkins
+## Jenkins
 Install Jenkins on CentOS and Ubuntu - bash [script name]
 
-#Minikube 
+## Minikube 
 Install Minikube on CentOS and Ubuntu - bash [script name]
