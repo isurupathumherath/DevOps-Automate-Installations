@@ -17,14 +17,14 @@ echo $VAR
 
 # while [[ $VAR != 'Y' ]] && [[ $VAR != 'y' ]] && [[ $VAR = 'N' ]] && [[ $VAR = 'n' ]]
 # do
-    if [[ $VAR = 'Y' ]] && [[ $VAR = 'y' ]]
+    if [[ $VAR = 'Y' ]]
     then
         minikube start
     elif [[ $VAR = 'N' ]] && [[ $VAR = 'n' ]]
     then
         echo 'Use minikube start command to run minikube manually'
     else 
-        echo 'Do you want to start Minikube Now? (Y/N)'
+        echo -n 'Do you want to start Minikube Now? (Y/N)'
         read VAR
     fi
 # done
