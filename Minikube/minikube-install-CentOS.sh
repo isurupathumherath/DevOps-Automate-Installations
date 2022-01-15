@@ -15,8 +15,8 @@ read VAR
 
 echo $VAR
 
-while [[ $VAR != 'Y' ]] && [[ $VAR != 'y' ]] && [[ $VAR = 'N' ]] && [[ $VAR = 'n' ]]
-do
+# while [[ $VAR != 'Y' ]] && [[ $VAR != 'y' ]] && [[ $VAR = 'N' ]] && [[ $VAR = 'n' ]]
+# do
     if [[ $VAR = 'Y' ]] && [[ $VAR = 'y' ]]
     then
         minikube start
@@ -27,7 +27,7 @@ do
         echo 'Do you want to start Minikube Now? (Y/N)'
         read VAR
     fi
-done
+# done
 
 # #Add minikube kubectl to alias
 # echo -n 'Do you want to add minikube kubectl to run easiar with only kubectl command? (Y/N)'
