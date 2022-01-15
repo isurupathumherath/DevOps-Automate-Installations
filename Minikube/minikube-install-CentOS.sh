@@ -21,6 +21,7 @@ do
     elif [[ $VAR = 'N' ]] || [[ $VAR = 'n' ]]
     then
         echo 'Use minikube start command to run minikube manually'
+        break
     else 
         echo -n 'Do you want to start Minikube Now? (Y/N)'
         read VAR
