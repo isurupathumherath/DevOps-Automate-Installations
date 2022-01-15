@@ -53,6 +53,8 @@ do
 done
 
 #Success Message
+echo
 echo 'Minikube is ready to use under kubectl command'
 echo 'Good Luck!'
 echo 'Author - Isuru Pathum Herath : https://github.com/isurupathumherath'
+echo

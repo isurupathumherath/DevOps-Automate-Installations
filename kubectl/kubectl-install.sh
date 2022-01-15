@@ -25,3 +25,4 @@ echo
 echo 'kubectl is ready to use!'
 echo 'Good Luck!'
 echo 'Author - Isuru Pathum Herath : https://github.com/isurupathumherath'
+echo
