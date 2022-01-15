@@ -13,7 +13,7 @@
 echo -n 'Do you want to start Minikube Now? (Y/N)'
 read VAR
 
-while [ $VAR != 'Y' ] || [ $VAR != 'y' ] || [ $VAR != 'N' ] || [ $VAR != 'n' ]
+while [ $VAR = 'Y' ] || [ $VAR = 'y' ] || [ $VAR = 'N' ] || [ $VAR = 'n' ]
 do
     if [[ $VAR = 'Y' ]] || [[ $VAR = 'y' ]]
     then
