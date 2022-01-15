@@ -10,8 +10,10 @@
 # echo 'Use this command to start minikube - minikube start'
 
 #Start Minikube
-echo 'Do you want to start Minikube Now? (Y/N)'
+echo -n 'Do you want to start Minikube Now? (Y/N)'
 read VAR
+
+echo $VAR
 
 while [[ $VAR != 'Y' ]] && [[ $VAR != 'y' ]] && [[ $VAR = 'N' ]] && [[ $VAR = 'n' ]]
 do
