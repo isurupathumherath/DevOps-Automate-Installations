@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# this script is only tested on CentOS 7
+# this script is only tested on CentOS 7 and Ubuntu
 
 # Download the latest release
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
