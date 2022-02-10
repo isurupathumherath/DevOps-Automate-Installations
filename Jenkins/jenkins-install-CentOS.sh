@@ -16,6 +16,7 @@ usermod -aG docker isurupathum
 
 # run jenkins
 # NOTE - If you want to change to jenkins expose port change the 8080 port to <YOUR-PORT>
+# NOTE - Replace current username with isurupathum in the above script
 
 mkdir -p /var/jenkins_home
 chown -R 1000:1000 /var/jenkins_home/
