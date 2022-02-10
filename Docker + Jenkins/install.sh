@@ -6,16 +6,24 @@
 # NOTE - Replace current username with isurupathum in the above script
 
 # install Docker
-sudo yum update
-sudo yum install -y yum-utils
-sudo yum-config-manager \
-    --add-repo \
-    https://download.docker.com/linux/centos/docker-ce.repo
-sudo yum update
-sudo yum install -y docker-ce docker-ce-cli containerd.io
+sudo apt-get update
+sudo apt-get install -y yum-utils
+sudo yum install -y \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 systemctl enable docker
 systemctl start docker
-usermod -aG docker isurupathum
+usermod -aG docker isurupathum  # NOTE - Change isurupathum to the name of your Linux Account Name
+
 
 # Install Jenkins
 sudo docker build -t jenkins-docker .
